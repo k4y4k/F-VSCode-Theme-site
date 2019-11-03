@@ -1,34 +1,33 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { css, jsx } from "@emotion/core"
+import styled from "@emotion/styled"
+
+const DownloadButton = styled.button`
+  background: none;
+  color: teal;
+  border: none;
+`
+
+const FlexSpacer = styled.div`
+  flex-grow: 1;
+`
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+  <div
+    css={css`
+      padding: 32px;
+      font-size: 24px;
+      background: linear-gradient(to bottom, #2a2021, #231b1b);
+      color: white;
+      display: flex;
+    `}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+    <h1>{siteTitle}</h1>
+    <FlexSpacer></FlexSpacer>
+    <DownloadButton>Download</DownloadButton>
+  </div>
 )
 
 Header.propTypes = {
