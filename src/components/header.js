@@ -1,8 +1,8 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
-import { css, jsx } from "@emotion/core"
-import styled from "@emotion/styled"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import { css, jsx } from '@emotion/core'
+import styled from '@emotion/styled'
 
 const DownloadButton = styled.button`
   background: none;
