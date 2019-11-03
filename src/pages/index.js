@@ -1,21 +1,41 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 import SEO from '../components/seo'
+import catAndHumanIllustration from '../images/cat-and-human-illustration.svg'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title='Home' />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to='/page-2/'>Go to page 2</Link>
-  </Layout>
-)
+function IndexPage() {
+  return (
+    <Layout>
+      <SEO
+        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title='Home'
+      />
+
+      <section className='text-center'>
+        <img
+          alt='Cat and human sitting on a couch'
+          className='block mx-auto w-1/2'
+          src={catAndHumanIllustration}
+        />
+
+        <h2 className='bg-yellow-400 text-2xl font-bold inline-block my-8 p-3'>
+          Hey there! Welcome to your first Gatsby site.
+        </h2>
+
+        <p className='leading-loose'>
+          This is a barebones starter for Gatsby styled using{` `}
+          <a
+            className='font-bold no-underline text-gray-900'
+            href='https://tailwindcss.com/'
+          >
+            Tailwind
+          </a>
+          , a utility-first CSS framework.
+        </p>
+      </section>
+    </Layout>
+  )
+}
 
 export default IndexPage

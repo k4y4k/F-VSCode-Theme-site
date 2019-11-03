@@ -1,7 +1,0 @@
-/* @import '~meyer-reset-scss'; */
-
-@tailwind "tailwindcss/base";
-
-@tailwind "tailwindcss/components";
-
-@tailwind "tailwindcss/utilities";
