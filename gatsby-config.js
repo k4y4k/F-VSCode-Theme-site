@@ -18,6 +18,13 @@ module.exports = {
         icon: `src/images/tailwind-icon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`arvo`, `fira sans`],
+        display: 'swap',
+      },
+    },
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,

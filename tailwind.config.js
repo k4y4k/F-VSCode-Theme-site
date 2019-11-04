@@ -2,6 +2,10 @@
 
 module.exports = {
   theme: {
+    fontFamily: {
+      display: 'Arvo',
+      sans: 'Fira Sans, sans-serif',
+    },
     extend: {
       colors: {
         storyteller: '#22d07f',
