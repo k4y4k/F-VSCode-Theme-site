@@ -1,0 +1,16 @@
+$storyteller: #22d07f;
+$grandmaster: #2a2021;
+
+#header {
+  h1,
+  h2,
+  h3 {
+    box-shadow: none;
+  }
+}
+
+h1,
+h2,
+h3 {
+  box-shadow: inset 0 0 $grandmaster, inset 0 -2px $storyteller;
+}

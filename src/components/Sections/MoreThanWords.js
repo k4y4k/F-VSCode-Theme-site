@@ -3,9 +3,14 @@ import styled from 'styled-components'
 
 const MoreThanWords = ({ className, children }) => {
   return (
-    <section className='border border-storyteller p-10'>
-      <h2 className='text-2xl font-display'>Writing more than words?</h2>
-      <h3 className='font-display'>Awesome.</h3>
+    <section className='p-10'>
+      <h2 className='text-3xl text-storyteller font-display inline-block'>
+        Writing more than words?
+      </h2>
+      <br />
+      <h3 className='font-display inline-block text-xl mb-3 text-storyteller'>
+        Awesome.
+      </h3>
 
       <p>
         It's not just headings and asterisks that get the star treatment here.
