@@ -19,6 +19,29 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: 'lang-',
+              inlineCodeMarker: '›',
+              aliases: { js: 'javascript' },
+              noInlineHighlight: false,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`arvo`, `fira sans`],
@@ -30,8 +53,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
+        printRejected: true,
         tailwind: true,
-        purgeOnly: [`src/css/style.css`],
       },
     },
     `gatsby-plugin-offline`,

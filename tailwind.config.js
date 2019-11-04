@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         storyteller: '#22d07f',
         grandmaster: '#2a2021',
+        forgemaster: '#5f97ed',
       },
     },
   },

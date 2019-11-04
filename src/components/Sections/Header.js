@@ -18,11 +18,11 @@ const Header = ({ className, children }) => {
 
   return (
     <section id='header' className='text-center p-10'>
-      <h1 className='text-6xl text-storyteller font-display inline-block inline-block'>
+      <h1 className='text-6xl font-bold italic text-storyteller font-display inline-block inline-block'>
         {queryData.site.siteMetadata.title}
       </h1>
       <br />
-      <h2 className='font-display inline-block inline my-8 p-3 text-3xl text-storyteller font-display inline-block'>
+      <h2 className='font-display inline-block inline my-8 p-3 text-3xl text-white font-display inline-block'>
         {queryData.site.siteMetadata.description}
       </h2>
       <br />

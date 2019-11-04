@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const GotMarkdown = ({ className, children }) => {
   return (
     <section className='p-10'>
-      <h2 className='text-3xl text-storyteller font-display inline-block'>
+      <h2 className='text-3xl italic text-storyteller font-display inline-block'>
         Got Markdown?
       </h2>
       <br />

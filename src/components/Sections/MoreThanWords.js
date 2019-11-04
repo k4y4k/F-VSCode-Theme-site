@@ -1,10 +1,27 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 const MoreThanWords = ({ className, children }) => {
+  const queryData = useStaticQuery(graphql`
+    {
+      allFile(filter: { extension: { eq: "md" }, name: { eq: "code" } }) {
+        edges {
+          node {
+            childMarkdownRemark {
+              html
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  console.log('queryData', queryData)
+
   return (
     <section className='p-10'>
-      <h2 className='text-3xl text-storyteller font-display inline-block'>
+      <h2 className='text-3xl italic text-storyteller font-display inline-block'>
         Writing more than words?
       </h2>
       <br />
@@ -21,21 +38,16 @@ const MoreThanWords = ({ className, children }) => {
         examples? See <pre>inline code blocks</pre> clearly.
       </p>
 
-      <p className='my-4'>Writing small novels of code? We got you.</p>
+      <p className='my-4'>
+        Writing small novels of code? <em>F</em>ear not!
+      </p>
 
-      <pre>
-        <code>
-          {`      
-function fTheme(){
-if (youUseF && youWriteCodeBlocks) {
-itsEasyToTellWhatsWhat = true
-visuallyDifferent = true
-awesomePercentage = 100
-}
-}
-`}
-        </code>
-      </pre>
+      <div
+        className='my-4'
+        dangerouslySetInnerHTML={{
+          __html: queryData.allFile.edges[0].node.childMarkdownRemark.html,
+        }}
+      ></div>
     </section>
   )
 }

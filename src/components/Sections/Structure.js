@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Structure = ({ className, children }) => {
   return (
     <section className='p-10'>
-      <h2 className='text-3xl text-storyteller font-display inline-block'>
+      <h2 className='text-3xl italic text-storyteller font-display inline-block'>
         Need structure?
       </h2>
       <br />
@@ -17,10 +17,17 @@ const Structure = ({ className, children }) => {
       </p>
 
       <p className='my-4'>Things to do?</p>
+
       <ul>
-        <li>- [x] Eat</li>
-        <li>- [x] Sleep</li>
-        <li>- [x] Write</li>
+        <li>
+          - [<span className='text-forgemaster'>x</span>] Eat
+        </li>
+        <li>
+          - [<span className='text-forgemaster'>x</span>] Sleep
+        </li>
+        <li>
+          - [<span className='text-forgemaster'>x</span>] Write
+        </li>
         <li>- [ ] Repeat</li>
       </ul>
     </section>

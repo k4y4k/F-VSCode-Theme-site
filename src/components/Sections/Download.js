@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Download = ({ className, children }) => {
   return (
     <section className='p-10'>
-      <h2 className='text-3xl text-storyteller font-display inline-block'>
+      <h2 className='text-3xl italic text-storyteller font-display inline-block'>
         Go on, give it a try!
       </h2>
       <br />
