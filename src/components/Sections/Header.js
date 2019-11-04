@@ -2,6 +2,8 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+const fLink = 'https://marketplace.visualstudio.com/items?itemName=k4y4k.f'
+
 const Header = ({ className, children }) => {
   const queryData = useStaticQuery(graphql`
     {
@@ -24,7 +26,12 @@ const Header = ({ className, children }) => {
         {queryData.site.siteMetadata.description}
       </h2>
       <br />
-      <button>get it</button>
+      <a
+        href={fLink}
+        className='bg-transparent hover:bg-storyteller text-storyteller font-semibold hover:text-white py-2 px-4 border border-storyteller hover:border-transparent rounded inline-block'
+      >
+        See it on the Marketplace
+      </a>
     </section>
   )
 }

@@ -12,11 +12,11 @@ const Download = ({ className, children }) => {
         You might just fall in love.
       </h3>
 
-      <p>
+      <p className='my-4'>
         Available for the only Electron-based code editor worth downloading,
         Visual Studio Code.
       </p>
-      <p>
+      <p className='my-4'>
         <sub>
           You didn't think I was going to say Atom or Brackets, did you?
         </sub>

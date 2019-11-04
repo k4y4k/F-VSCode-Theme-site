@@ -11,12 +11,12 @@ const Structure = ({ className, children }) => {
       <h3 className='font-display inline-block text-xl mb-3 text-storyteller'>
         We got you.
       </h3>
-      <p>
+      <p className='my-4'>
         Headings are visually distinct from one another, up to four levels deep.
         You're looking at them now.
       </p>
 
-      <p>Things to do?</p>
+      <p className='my-4'>Things to do?</p>
       <ul>
         <li>- [x] Eat</li>
         <li>- [x] Sleep</li>

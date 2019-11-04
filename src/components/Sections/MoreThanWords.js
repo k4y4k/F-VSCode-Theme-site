@@ -12,16 +12,16 @@ const MoreThanWords = ({ className, children }) => {
         Awesome.
       </h3>
 
-      <p>
+      <p className='my-4'>
         It's not just headings and asterisks that get the star treatment here.
       </p>
 
-      <p>
+      <p className='my-4'>
         F makes sure that <span>comments don't get in your way.</span> Sharing
         examples? See <pre>inline code blocks</pre> clearly.
       </p>
 
-      <p>Writing small novels of code? We got you.</p>
+      <p className='my-4'>Writing small novels of code? We got you.</p>
 
       <pre>
         <code>
