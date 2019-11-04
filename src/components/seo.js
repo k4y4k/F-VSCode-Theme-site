@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import Helmet from 'react-helmet'
 
-function SEO({ description, lang, meta, keywords, title }) {
+const SEO = ({ description, lang, meta, keywords, title }) => {
   const { site } = useStaticQuery(graphql`
     query DefaultSEOQuery {
       site {
@@ -67,7 +67,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         )
         .concat(meta)}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`%s | ${site.siteMetadata.description}`}
     />
   )
 }
