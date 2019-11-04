@@ -30,12 +30,14 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: `gatsby-remark-vscode`,
+            // All options are optional. Defaults shown here.
             options: {
-              classPrefix: 'lang-',
-              inlineCodeMarker: '›',
-              aliases: { js: 'javascript' },
-              noInlineHighlight: false,
+              colorTheme: 'F', // Read on for list of included themes. Also accepts object and function forms.
+              wrapperClassName: '', // Additional class put on 'pre' tag
+              injectStyles: true, // Injects (minimal) additional CSS for layout and scrolling
+              extensions: [{ identifier: 'k4y4k.f', version: '0.3.1' }],
+              logLevel: 'error',
             },
           },
         ],

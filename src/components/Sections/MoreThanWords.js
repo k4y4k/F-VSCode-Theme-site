@@ -35,7 +35,8 @@ const MoreThanWords = ({ className, children }) => {
 
       <p className='my-4'>
         F makes sure that <span>comments don't get in your way.</span> Sharing
-        examples? See <pre>inline code blocks</pre> clearly.
+        examples? See <span className='inline'>inline code blocks</span>{' '}
+        clearly.
       </p>
 
       <p className='my-4'>
