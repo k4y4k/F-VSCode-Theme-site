@@ -25,6 +25,7 @@ module.exports = {
         display: 'swap',
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
