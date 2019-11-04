@@ -18,7 +18,7 @@ const Structure = ({ className, children }) => {
 
       <p className='my-4'>Things to do?</p>
 
-      <ul>
+      <ul id='ul' className='w-1/2 my-4'>
         <li>
           - [<span className='text-forgemaster'>x</span>] Eat
         </li>
@@ -30,6 +30,24 @@ const Structure = ({ className, children }) => {
         </li>
         <li>- [ ] Repeat</li>
       </ul>
+
+      <p className='my-4'>Things to do... in order?</p>
+
+      <ol id='ol'>
+        <li>
+          <span className='text-forgemaster'>1.</span> Go Back Through Time Skip
+        </li>
+        <li>
+          <span className='text-forgemaster'>2.</span> Perform
+          Abracadabacardiacarrest On Younger Self
+        </li>
+        <li>
+          <span className='text-forgemaster'>3.</span> Hide Body
+        </li>
+        <li>
+          <span className='text-forgemaster'>4.</span> Fight Off Future Self
+        </li>
+      </ol>
     </section>
   )
 }

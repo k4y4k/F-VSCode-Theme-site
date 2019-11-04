@@ -35,7 +35,8 @@ const MoreThanWords = ({ className, children }) => {
 
       <p className='my-4'>
         F makes sure that <span>comments don't get in your way.</span> Sharing
-        examples? See <span className='inline'>inline code blocks</span>{' '}
+        examples? See{' '}
+        <span className='inline font-monospace'>inline code blocks</span>{' '}
         clearly.
       </p>
 
@@ -44,7 +45,6 @@ const MoreThanWords = ({ className, children }) => {
       </p>
 
       <div
-        className='my-4'
         dangerouslySetInnerHTML={{
           __html: queryData.allFile.edges[0].node.childMarkdownRemark.html,
         }}

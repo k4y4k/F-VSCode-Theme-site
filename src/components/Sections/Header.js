@@ -22,7 +22,7 @@ const Header = ({ className, children }) => {
         {queryData.site.siteMetadata.title}
       </h1>
       <br />
-      <h2 className='font-display inline-block inline my-8 p-3 text-3xl text-white font-display inline-block'>
+      <h2 className='font-display inline-block m-2 p-2 text-3xl text-white font-display inline-block'>
         {queryData.site.siteMetadata.description}
       </h2>
       <br />
@@ -30,7 +30,7 @@ const Header = ({ className, children }) => {
         href={fLink}
         className='bg-transparent hover:bg-storyteller text-storyteller font-semibold hover:text-white py-2 px-4 border border-storyteller hover:border-transparent rounded inline-block'
       >
-        See it on the Marketplace
+        Download F from the Marketplace
       </a>
     </section>
   )

@@ -1,11 +1,7 @@
 @import './var';
 
-#header {
-  h1,
-  h2,
-  h3 {
-    box-shadow: none;
-  }
+body {
+  background: linear-gradient(to bottom, $grandmaster, #231b1b);
 }
 
 h1,
@@ -27,5 +23,24 @@ em {
   &::before,
   &::after {
     content: '_';
+  }
+}
+
+.f {
+  background: none !important;
+}
+
+#ul,
+#ol {
+  font-size: 1em;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace;
+}
+
+#header {
+  h1,
+  h2,
+  h3 {
+    box-shadow: none;
   }
 }
